@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - MRX WORKOUT</title>
-  <meta name="description" content="Official Privacy Policy for MRX WORKOUT Android Application" />
   <style>
     :root {
       --primary: #0284c7;
       --primary-dark: #0369a1;
+      --primary-light: #e0f2fe;
       --accent: #38bdf8;
       --bg: #0f172a;
       --surface: #1e293b;
@@ -31,7 +31,7 @@
       background-color: var(--bg);
       color: var(--text-main);
       line-height: 1.65;
-      padding: 32px 16px;
+      padding: 24px 16px;
     }
 
     .container {
@@ -40,14 +40,15 @@
       background: var(--surface);
       border: 1px solid var(--surface-border);
       border-radius: var(--radius);
-      padding: 40px 36px;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+      padding: 36px 32px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
     @media (max-width: 640px) {
       body {
-        padding: 16px 8px;
+        padding: 12px 8px;
       }
+
       .container {
         padding: 24px 18px;
       }
@@ -59,21 +60,21 @@
       gap: 6px;
       background: rgba(56, 189, 248, 0.15);
       color: var(--accent);
-      padding: 5px 14px;
+      padding: 4px 12px;
       border-radius: 9999px;
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.5px;
       text-transform: uppercase;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       border: 1px solid rgba(56, 189, 248, 0.25);
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 800;
       color: #ffffff;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       letter-spacing: -0.5px;
     }
 
@@ -92,20 +93,6 @@
       color: var(--text-main);
     }
 
-    .highlight-card {
-      background: rgba(2, 132, 199, 0.12);
-      border-left: 4px solid var(--accent);
-      border-radius: 8px;
-      padding: 16px;
-      margin: 20px 0;
-    }
-
-    .highlight-card p {
-      margin-bottom: 0;
-      color: #e2e8f0;
-      font-size: 14.5px;
-    }
-
     h2 {
       font-size: 20px;
       font-weight: 700;
@@ -114,6 +101,9 @@
       margin-bottom: 12px;
       padding-bottom: 6px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     h3 {
@@ -130,7 +120,7 @@
       font-size: 15px;
     }
 
-    ul {
+    ul, ol {
       margin-left: 22px;
       margin-bottom: 16px;
       color: #cbd5e1;
@@ -141,9 +131,23 @@
       margin-bottom: 8px;
     }
 
+    .highlight-card {
+      background: rgba(2, 132, 199, 0.1);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px;
+      margin: 18px 0;
+    }
+
+    .highlight-card p {
+      margin-bottom: 0;
+      color: #e2e8f0;
+      font-size: 14.5px;
+    }
+
     .data-table-wrapper {
       overflow-x: auto;
-      margin: 20px 0;
+      margin: 18px 0;
       border-radius: 8px;
       border: 1px solid var(--surface-border);
     }
@@ -177,12 +181,9 @@
       display: inline-block;
       padding: 2px 8px;
       border-radius: 4px;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 600;
-    }
-
-    .tag-local {
-      background: rgba(16, 185, 129, 0.15);
+      background: rgba(16, 185, 129, 0.2);
       color: #34d399;
       border: 1px solid rgba(16, 185, 129, 0.3);
     }
@@ -205,160 +206,434 @@
       text-decoration: underline;
     }
 
-    .footer-bar {
+    .action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-top: 32px;
-      padding-top: 18px;
+      padding-top: 20px;
       border-top: 1px solid var(--surface-border);
-      text-align: center;
-      font-size: 13px;
-      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface-border);
+      color: #ffffff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #475569;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+      }
+
+      .container {
+        border: none;
+        box-shadow: none;
+        background: #fff;
+        color: #000;
+        padding: 0;
+      }
+
+      .action-bar,
+      .btn {
+        display: none;
+      }
+
+      p,
+      li,
+      td {
+        color: #333;
+      }
+
+      h1,
+      h2,
+      h3,
+      th {
+        color: #000;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
-    
+
     <div class="header-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
       Google Play Compliant Privacy Document
     </div>
 
     <h1>Privacy Policy</h1>
-    
+
     <div class="meta-bar">
       <span>Application: <strong>MRX WORKOUT</strong></span>
-      <span>Package Name: <strong>com.aistudio.mrxworkout.fitapp</strong></span>
-      <span>Developer: <strong>Sonu Kumar</strong></span>
+      <span>Package ID: <strong>com.aistudio.mrxworkout.fitapp</strong></span>
+      <span>Last Updated: <strong>September 15, 2026</strong></span>
       <span>Effective Date: <strong>September 15, 2026</strong></span>
     </div>
 
     <div class="highlight-card">
-      <p><strong>Privacy Commitment:</strong> MRX WORKOUT operates strictly on an <strong>offline-first architecture</strong>. We do not sell, rent, commercialize, or transmit your health or workout data to external servers or third-party data brokers. All your athlete metrics, workout logs, and custom routines stay safely on your local device.</p>
+      <p>
+        <strong>Summary:</strong> MRX WORKOUT is built with an
+        <strong>offline-first privacy approach</strong>. We do not collect,
+        sell, rent, or share your personal health or workout data with third
+        parties. All workout metrics, BMI calculations, and progress tracking
+        are stored securely and directly on your local device.
+      </p>
     </div>
 
     <h2>1. Introduction</h2>
-    <p>This Privacy Policy explains how <strong>MRX WORKOUT</strong> ("the App"), developed by <strong>Sonu Kumar</strong> ("we", "our"), collects, processes, and protects your information when you download and use our Android mobile application.</p>
-    <p>We are fully committed to protecting your privacy in strict compliance with the <strong>Google Play Developer Distribution Agreement</strong>, Google Play's <strong>User Data Policies</strong>, and global privacy frameworks including GDPR.</p>
 
-    <h2>2. Data Collection and Usage</h2>
-    <p>To provide personalized workout plans, rest timers, and exercise tracking, the App stores and calculates certain data parameters directly on your device:</p>
+    <p>
+      This Privacy Policy explains how <strong>MRX WORKOUT</strong>
+      ("we", "our", or "the App"), developed by <strong>Sonu Lal</strong>,
+      collects, uses, and protects your information when you download,
+      install, and use our Android mobile application.
+    </p>
 
-    <h3>A. Fitness & Profile Information (Voluntarily Provided)</h3>
+    <p>
+      We respect your right to privacy and are committed to protecting any
+      information processed by the App in compliance with the
+      <strong>Google Play Developer Distribution Agreement</strong>,
+      Google's <strong>User Data policies</strong>,
+      the <strong>General Data Protection Regulation (GDPR)</strong>,
+      and other applicable global privacy regulations.
+    </p>
+
+    <h2>2. Information We Collect and Process</h2>
+
+    <p>
+      To provide personalized workout plans, rest timers, and exercise
+      tracking, the App processes certain data categories. Because MRX
+      WORKOUT operates primarily on-device, this data remains on your
+      physical phone:
+    </p>
+
+    <h3>A. Fitness and Athlete Profile Parameters (Voluntarily Provided)</h3>
+
     <ul>
-      <li><strong>Physical Parameters:</strong> Gender, age range, height, weight, and fitness goal (e.g., muscle gain, fat loss, stamina).</li>
-      <li><strong>Workout Preferences:</strong> Target muscle focus areas (Chest, Arms, Abs, Legs, Full Body), workout style (Hypertrophy, Strength, HIIT), experience level, and available equipment.</li>
-      <li><strong>Where it is stored:</strong> Stored locally in Android App Sandboxed Storage (LocalStorage / SQLite). It is never sent to external servers.</li>
+      <li>
+        <strong>Physical Attributes:</strong> Gender, age range, height,
+        current weight, and target goal (e.g., build muscle, lose fat,
+        maintain stamina).
+      </li>
+      <li>
+        <strong>Workout Preferences:</strong> Target focus areas (Chest,
+        Arms, Abs, Legs, Full Body), workout style (Hypertrophy, Strength,
+        HIIT), experience level, and available gym/home equipment.
+      </li>
+      <li>
+        <strong>Storage:</strong> Stored strictly in local device storage
+        (Android App Sandbox / LocalStorage). It is never sent to external
+        commercial servers.
+      </li>
     </ul>
 
-    <h3>B. Workout Logs & Progress Metrics</h3>
+    <h3>B. Workout Progress and Activity Logs</h3>
+
     <ul>
-      <li>Completed workout routines, exercise checkmarks, set counts, and repetitions.</li>
-      <li>Session timers, calculated calories burned, and daily consistency streak counters.</li>
-      <li><strong>Where it is stored:</strong> Exclusively on your physical device.</li>
+      <li>Completed workout sessions, sets, and rep checkmarks.</li>
+      <li>Rest timer durations and elapsed workout times.</li>
+      <li>Calculated calories burned estimates based on MET formulas.</li>
+      <li>
+        <strong>Storage:</strong> Retained locally on your device for
+        generating personal stats, streaks, and analytics graphs.
+      </li>
     </ul>
 
-    <h3>C. Device Hardware & Permissions</h3>
+    <h3>C. Device & System Permissions Used</h3>
+
     <ul>
-      <li><strong>Text-to-Speech (TTS) Voice Countdown:</strong> The App utilizes Android's built-in Text-to-Speech engine to call out workout timer counts and transition cues. We do not record or process audio, and no microphone permission is used.</li>
-      <li><strong>Network Permission (INTERNET):</strong> Declared in AndroidManifest for basic web linking and support channels. We do not run third-party tracking networks or ad spyware.</li>
-      <li><strong>Zero Sensitive Permissions:</strong> MRX WORKOUT does not request or access camera, contacts, microphone, photos, location/GPS, phone state, or SMS.</li>
+      <li>
+        <strong>Internet Permission
+        (<code>android.permission.INTERNET</code>):</strong>
+        Used only to fetch public CDN fitness visual assets
+        (exercise animation previews) and handle standard web-view rendering.
+        No background data synchronization occurs.
+      </li>
+
+      <li>
+        <strong>Vibration
+        (<code>android.permission.VIBRATE</code>):</strong>
+        Used solely to provide physical haptic feedback when a workout rest
+        timer ends.
+      </li>
+
+      <li>
+        <strong>Text-to-Speech (TTS):</strong>
+        Uses on-device speech synthesis to announce upcoming exercises.
+        No voice or audio recordings are captured or transmitted.
+      </li>
     </ul>
 
     <h2>3. Google Play Data Safety Disclosure</h2>
-    <p>For Google Play Store submission and verification:</p>
+
+    <p>
+      In accordance with Google Play's Data Safety declaration requirements,
+      below is a complete breakdown of data handling by MRX WORKOUT:
+    </p>
 
     <div class="data-table-wrapper">
       <table>
         <thead>
           <tr>
-            <th>Data Type</th>
+            <th>Data Category</th>
             <th>Collected?</th>
             <th>Shared with Third Parties?</th>
-            <th>Storage Location</th>
+            <th>Processing Purpose</th>
           </tr>
         </thead>
+
         <tbody>
           <tr>
-            <td><strong>Personal Information</strong> (Age, Gender)</td>
-            <td>Optional</td>
+            <td><strong>Personal Identifiers (Name, Phone, Address)</strong></td>
             <td>No</td>
-            <td><span class="tag-badge tag-local">Local Only</span> Stored on device</td>
+            <td>No</td>
+            <td>Not collected</td>
           </tr>
+
           <tr>
-            <td><strong>Health & Fitness</strong> (Height, Weight, Workouts)</td>
-            <td>Optional</td>
+            <td><strong>Health & Fitness Metrics (Weight, Height, BMI)</strong></td>
+            <td><span class="tag-badge">Stored Locally</span></td>
             <td>No</td>
-            <td><span class="tag-badge tag-local">Local Only</span> Stored on device</td>
+            <td>App functionality & custom workout generation</td>
           </tr>
+
           <tr>
-            <td><strong>Financial Information</strong></td>
+            <td><strong>Workout Activity Logs</strong></td>
+            <td><span class="tag-badge">Stored Locally</span></td>
             <td>No</td>
-            <td>No</td>
-            <td>Not Collected</td>
+            <td>Progress tracking & stats charts</td>
           </tr>
+
           <tr>
-            <td><strong>Precise / Approximate Location</strong></td>
+            <td><strong>Financial / Payment Info</strong></td>
             <td>No</td>
             <td>No</td>
-            <td>Not Collected</td>
+            <td>None collected</td>
           </tr>
+
           <tr>
-            <td><strong>Photos, Media, or Files</strong></td>
+            <td><strong>Location (GPS / Network)</strong></td>
             <td>No</td>
             <td>No</td>
-            <td>Not Accessed</td>
+            <td>None accessed</td>
           </tr>
+
           <tr>
-            <td><strong>Audio / Microphone Recordings</strong></td>
+            <td><strong>Photos / Media / Files</strong></td>
             <td>No</td>
             <td>No</td>
-            <td>Not Collected</td>
+            <td>None accessed</td>
           </tr>
+
           <tr>
-            <td><strong>Contacts / SMS / Device IDs</strong></td>
+            <td><strong>Audio / Microphone</strong></td>
             <td>No</td>
             <td>No</td>
-            <td>Not Accessed</td>
+            <td>None recorded</td>
+          </tr>
+
+          <tr>
+            <td><strong>Contacts / SMS</strong></td>
+            <td>No</td>
+            <td>No</td>
+            <td>None accessed</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <h2>4. Third-Party Services</h2>
-    <p>The App does not integrate third-party ad networks, advertising identifiers, or analytics tracking SDKs. Standard platform services include:</p>
-    <ul>
-      <li><strong>Google Play Services:</strong> Provided by Google LLC for basic OS compatibility and app delivery, governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: var(--accent);">Google's Privacy Policy</a>.</li>
-    </ul>
+    <h2>4. How We Use Your Data</h2>
 
-    <h2>5. User Data Rights & Data Deletion</h2>
-    <p>Because your data resides entirely on your device, you have full control over data deletion at all times:</p>
+    <p>
+      The local data processed by the App is used exclusively for:
+    </p>
+
     <ul>
-      <li><strong>In-App Reset:</strong> You can edit or change your profile data at any time under <em>Settings &gt; Edit Profile</em>.</li>
-      <li><strong>Device Storage Wipe:</strong> You can permanently wipe all workout logs and profile details anytime by going to:
-        <br /><em>Android Settings &gt; Apps &gt; MRX WORKOUT &gt; Storage &gt; Clear Data</em>.
+      <li>
+        Generating customized workout routines matched to your fitness level
+        and equipment.
       </li>
-      <li><strong>App Uninstallation:</strong> Uninstalling the application automatically deletes all sandboxed files and saved records permanently.</li>
-      <li><strong>Email Support Deletion:</strong> If you ever communicate with us via email and want your communication history deleted, email us at <a href="mailto:sonukumar4454596@gmail.com" style="color: var(--accent);">sonukumar4454596@gmail.com</a> with the subject "Data Deletion Request".</li>
+      <li>
+        Calculating Body Mass Index (BMI) and recommended weekly volume.
+      </li>
+      <li>
+        Providing audio cues and timers during exercise sets.
+      </li>
+      <li>
+        Displaying your progress history, completed workouts, and achievement
+        badges.
+      </li>
     </ul>
 
-    <h2>6. Children's Privacy (COPPA)</h2>
-    <p>MRX WORKOUT is designed for general fitness enthusiasts aged 13 and older. We do not knowingly solicit or collect personally identifiable information from children under the age of 13.</p>
+    <h2>5. Third-Party Services</h2>
 
-    <h2>7. Policy Updates</h2>
-    <p>We may periodically update this policy to reflect any updates in application features or Google Play requirements. Any changes will be published directly on this URL with an updated effective date.</p>
+    <p>
+      The App does not use third-party behavioral analytics, ad-tracking SDKs,
+      or data brokers. Standard platform services include:
+    </p>
 
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions or require assistance regarding this Privacy Policy, please contact:</p>
+    <ul>
+      <li>
+        <strong>Google Play Services:</strong>
+        Provided by Google LLC to facilitate app installation, updates,
+        and OS compatibility. Subject to
+        <a href="https://policies.google.com/privacy"
+           target="_blank"
+           rel="noopener"
+           style="color: var(--accent);">
+          Google's Privacy Policy
+        </a>.
+      </li>
+    </ul>
+
+    <h2>6. Data Retention and Deletion (User Control)</h2>
+
+    <p>
+      Because all user data is stored locally on your device, you have
+      complete and instantaneous control over it at all times:
+    </p>
+
+    <ul>
+      <li>
+        <strong>In-App Reset:</strong>
+        You can edit or overwrite your profile details at any time in the
+        <em>Settings &gt; Edit Profile</em> screen.
+      </li>
+
+      <li>
+        <strong>Complete Device Deletion:</strong>
+        You can permanently wipe all saved workout history, metrics, and
+        preferences by going to:
+        <br />
+        <em>
+          Android Settings &gt; Apps &gt; MRX WORKOUT &gt; Storage &gt;
+          Clear Storage / Clear Data
+        </em>.
+      </li>
+
+      <li>
+        <strong>Uninstalling the App:</strong>
+        Uninstalling the application automatically removes all sandbox files,
+        preferences, and cached exercise records from your device.
+      </li>
+
+      <li>
+        <strong>Support Deletion Requests:</strong>
+        If you have contacted us via email for support and wish to have your
+        email correspondence deleted, email us at
+        <a href="mailto:supportmrxworkout@gmail.com"
+           style="color: var(--accent);">
+          supportmrxworkout@gmail.com
+        </a>
+        with the subject "Data Deletion Request", and we will purge all
+        correspondence within 30 days.
+      </li>
+    </ul>
+
+    <h2>7. Children's Privacy (COPPA & Family Policy)</h2>
+
+    <p>
+      MRX WORKOUT is intended for general audiences aged 13 and above.
+      We do not knowingly solicit or collect personally identifiable
+      information from children under the age of 13. If you believe that
+      a child has provided us with personal information, please contact us
+      immediately so that we can take appropriate measures.
+    </p>
+
+    <h2>8. Security Safeguards</h2>
+
+    <p>
+      We value your trust in using MRX WORKOUT. Your data is isolated within
+      Android's sandboxed application storage environment, preventing
+      unauthorized access by other applications installed on your device.
+    </p>
+
+    <h2>9. Changes to This Privacy Policy</h2>
+
+    <p>
+      We may update our Privacy Policy from time to time to reflect
+      modifications in application features, legal requirements, or Google
+      Play policy updates. Any changes will be posted on this page with an
+      updated "Effective Date". Continued use of the App following any
+      changes indicates your acceptance of the updated policy.
+    </p>
+
+    <h2>10. Contact Us</h2>
+
+    <p>
+      If you have any questions, concerns, or feedback regarding this
+      Privacy Policy or our data practices, please contact us at:
+    </p>
 
     <div class="contact-box">
-      <p><strong>Developer:</strong> Sonu Kumar</p>
-      <p><strong>Email:</strong> <a href="mailto:sonukumar4454596@gmail.com">sonukumar4454596@gmail.com</a></p>
-      <p><strong>App Name:</strong> MRX WORKOUT</p>
-      <p><strong>Package ID:</strong> com.aistudio.mrxworkout.fitapp</p>
+      <p><strong>Developer:</strong> Sonu Lal</p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:supportmrxworkout@gmail.com">
+          supportmrxworkout@gmail.com
+        </a>
+      </p>
+      <p><strong>Application:</strong> MRX WORKOUT</p>
+      <p><strong>Package Name:</strong> com.aistudio.mrxworkout.fitapp</p>
     </div>
 
-    <div class="footer-bar">
-      &copy; 2026 MRX WORKOUT &bull; Developed by Sonu Kumar &bull; All Rights Reserved.
+    <div class="action-bar">
+
+      <button class="btn" onclick="window.print()">
+        <svg width="16" height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+
+        Print or Save as PDF
+      </button>
+
+      <a href="index.html" class="btn btn-primary">
+        Return to App
+      </a>
+
     </div>
 
   </div>
